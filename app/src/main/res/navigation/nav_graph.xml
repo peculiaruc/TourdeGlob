@@ -9,10 +9,19 @@
         android:id="@+id/cityListFragment"
         android:name="com.peculiaruc.tourdeglob.ui.cities.CityListFragment"
         android:label="Cities"
-        tools:layout="@layout/fragment_city_list" />
+        tools:layout="@layout/fragment_city_list" >
+        <action
+            android:id="@+id/action_cityListFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/favouriteFragment"
         android:name="com.peculiaruc.tourdeglob.ui.favourites.FavouriteFragment"
         android:label="Favourites"
         tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.peculiaruc.tourdeglob.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>
